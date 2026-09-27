@@ -16,6 +16,14 @@ QuantaVerse is designed to help students, researchers, and professionals move fr
 - **Learner Dashboard** — Tracks learning progress, completed lessons, exercises, and performance.
 - **Instructor Features** — Module management, student progress tracking, assignments, and instructor dashboards.
 - **Research & Collaboration** — Circuit sharing, verified portfolios, mentor discovery, and academic connections.
+- ## Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Monaco Editor, Three.js / React Three Fiber
+- **Backend:** Python, FastAPI, Pydantic, SQLAlchemy
+- **AI:** GPT-OSS-120B, Groq, RAG, Vector Retrieval
+- **Quantum:** Qiskit Aer, Cirq, PennyLane, qBraid, Canonical Circuit IR, Framework Adapters/Transpilers
+- **Database:** PostgreSQL / SQLite
+- **Deployment:** Vercel, Render, Docker
 
 ## AI Reasoning
 
@@ -35,6 +43,7 @@ GPT-OSS-120B
 Quantum-Aware Guidance
       ↓
 Explain • Debug • Optimize • Personalize
+
 ## Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Monaco Editor, Three.js / React Three Fiber
@@ -44,7 +53,7 @@ Explain • Debug • Optimize • Personalize
 - **Database:** PostgreSQL / SQLite
 - **Deployment:** Vercel, Render, Docker
 
-## Getting Started
+
 
 ### Prerequisites
 
