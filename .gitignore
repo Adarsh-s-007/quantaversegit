@@ -67,3 +67,4 @@ backend/__pycache__/
 # course material, and nothing that belongs in the repository.
 /backend/uploads/
 .claude/
+CLAUDE.md
