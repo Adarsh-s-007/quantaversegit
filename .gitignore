@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# ...but the templates are meant to be read
+!.env.example
+
+# python service
+backend/.venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+
+# The account database, wherever it lands. It is normally written next to the
+# backend, but uvicorn started from the repo root puts it here instead — and it
+# holds real rows: e-mail addresses, password hashes, session tokens. Matching
+# on the extension rather than the directory means starting the server from the
+# wrong folder cannot turn into a commit that leaks them.
+*.db
+*.db-shm
+*.db-wal
+# ai
+
+# A stray nested clone. It was committed as a gitlink with no .gitmodules, so a
+# fresh clone got an empty directory and a warning. Nothing imports it.
+/QuantaVerse/
+
+# Notes professors upload through the API (QUANTAVERSE_NOTES_DIR). Other people's
+# course material, and nothing that belongs in the repository.
+/backend/uploads/

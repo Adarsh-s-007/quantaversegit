@@ -1,0 +1,88 @@
+"use client";
+
+import { ArrowRight } from "lucide-react";
+
+import { ActionLink } from "@/components/site/action";
+import { Zone } from "@/components/three/stage";
+import { StateReadout } from "@/components/three/state-readout";
+
+/**
+ * The hero.
+ *
+ * The name, at the largest size the viewport will carry, and two ways in.
+ * Nothing else.
+ *
+ * It used to carry a headline, a row of claims and a paragraph explaining the
+ * site. All of that said true things, and all of it was read by nobody: a
+ * visitor who has already clicked through to a quantum-computing site does not
+ * need to be sold on one, and a wall of prose above the fold is the thing that
+ * makes a page look generated rather than made. What is left is the mark, set
+ * once and whole, so the headline is the logo at size rather than a slogan
+ * wearing its font.
+ *
+ * It stays on one line at every width without a nowrap, because `display-1` is
+ * measured in `cqw` — a share of its own column rather than of the window — so
+ * the ratio between the word's width and the space it has never changes. The
+ * size is turned down from the utility's own, though: 13cqw was set for a stack
+ * of short words, and eleven letters at that rate fill 98% of the column at
+ * every width. Nothing overflowed, but `QuantaVerse` has no space in it to
+ * break at, so a 2% margin is the whole safety budget — one substituted glyph
+ * while the display face loads and it runs off the side. 11.4cqw sits it at
+ * about 86%, which reads as deliberate rather than as barely fitting.
+ *
+ * The work of holding the fold now belongs to the two live objects either side
+ * of it — the lattice rippling under the cursor behind, and the qubit to the
+ * right. That one is not an illustration of a qubit, it is one: the cursor's
+ * vertical position is θ and its horizontal position is φ, so a visitor who has
+ * never seen a Bloch sphere has already prepared a state on it before they
+ * reach the buttons, and the read-out underneath writes down what they just did
+ * in the notation module one teaches.
+ */
+export function Hero() {
+  return (
+    <section className="relative">
+      <div className="mx-auto max-w-[1440px] px-5 pt-20 pb-16 lg:px-10 lg:pt-24 lg:pb-20">
+        <div className="grid items-center gap-x-16 gap-y-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,30rem)]">
+          <div className="@container animate-rise">
+            {/* The wordmark, enlarged — one word, coloured where the mark
+                colours it. */}
+            <h1
+              className="display-1 text-paper"
+              /* Inline, because this competes with `display-1`'s own font-size
+                 and two utilities setting the same property are decided by the
+                 order Tailwind emits them, not by the order they are written
+                 here. A style attribute is not a coin toss. */
+              style={{ fontSize: "clamp(2.25rem, 11.4cqw, 5.7rem)" }}
+            >
+              Quanta<span className="text-photon">Verse</span>
+            </h1>
+
+            <div
+              data-tour="home"
+              className="mt-10 flex flex-wrap items-center gap-3"
+            >
+              <ActionLink href="/curriculum" size="lg">
+                Start learning
+                <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
+              </ActionLink>
+              <ActionLink href="/sandbox" variant="outline" size="lg">
+                Open circuit sandbox
+              </ActionLink>
+            </div>
+          </div>
+
+          {/* The qubit, and the instrument that reads it. */}
+          <div className="flex flex-col gap-6">
+            <Zone
+              id="hero-qubit"
+              focus="qubit"
+              scale={1.05}
+              className="h-[20rem] w-full sm:h-[24rem] lg:h-[27rem]"
+            />
+            <StateReadout />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
