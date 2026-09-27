@@ -24,6 +24,11 @@ QuantaVerse is designed to help students, researchers, and professionals move fr
 - **Quantum:** Qiskit Aer, Cirq, PennyLane, qBraid, Canonical Circuit IR, Framework Adapters/Transpilers
 - **Database:** PostgreSQL / SQLite
 - **Deployment:** Vercel, Render, Docker
+- ### Prerequisites
+
+- Node.js 20+
+- Python 3.11 or 3.12
+- Git
 
 ## AI Reasoning
 
@@ -48,8 +53,4 @@ Explain • Debug • Optimize • Personalize
 
 
 
-### Prerequisites
 
-- Node.js 20+
-- Python 3.11 or 3.12
-- Git
