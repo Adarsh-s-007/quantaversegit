@@ -44,14 +44,7 @@ Quantum-Aware Guidance
       ↓
 Explain • Debug • Optimize • Personalize
 
-## Tech Stack
 
-- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Monaco Editor, Three.js / React Three Fiber
-- **Backend:** Python, FastAPI, Pydantic, SQLAlchemy
-- **AI:** GPT-OSS-120B, Groq, RAG, Vector Retrieval
-- **Quantum:** Qiskit Aer, Cirq, PennyLane, qBraid, Canonical Circuit IR, Framework Adapters/Transpilers
-- **Database:** PostgreSQL / SQLite
-- **Deployment:** Vercel, Render, Docker
 
 
 
