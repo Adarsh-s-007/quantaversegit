@@ -32,7 +32,7 @@ QuantaVerse is designed to help students, researchers, and professionals move fr
 
 ## AI Reasoning
 
-The tutor is designed around a context-aware reasoning loop rather than a standalone chatbot:
+The tutor is designed around a context-aware reasoning loop rather than a standalone chatbot
 
 ```text
 Learner Context
