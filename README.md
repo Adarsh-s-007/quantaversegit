@@ -43,26 +43,7 @@ One platform that takes students, professors, researchers and working profession
 
 **Academic and research hub.** Students discover professors and join their classes, which connects learners with mentors.
 
-## Status
 
-We label every feature honestly. "Stub" and "Planned" items are on the roadmap, not in the current build.
-
-| Capability | Status |
-| --- | --- |
-| Drag-and-drop circuit builder ↔ Monaco code editor, bi-directional sync | ✅ Live |
-| In-browser statevector simulator | ✅ Live |
-| Qiskit Aer, Cirq, PennyLane execution through the canonical IR | ✅ Live |
-| Autograder: state fidelity + unitary equivalence + hints | ✅ Live |
-| AI tutor grounded in circuit state, streaming, offline fallback | ✅ Live |
-| Eight-module curriculum, theory PDFs, graded labs, badges | ✅ Live |
-| Progress, mastery, skill axes and next-step recommendations | ✅ Live |
-| Professor console: classes, rankings, notes upload | ✅ Live |
-| Student–professor hub | ✅ Live |
-| qBraid adapter | 🟡 Stub: returns a uniform distribution, hidden from the engine picker |
-| Live qBraid execution with credentials | 🔜 Planned |
-| AI circuit/code generation from plain-language prompts, checked by the autograder before display | 🔜 Planned |
-| Retrieval-augmented tutor over course material (PostgreSQL + pgvector) | 🔜 Planned |
-| Dedicated researcher role | 🔜 Planned (current roles: student, professor) |
 
 ## Architecture
 
